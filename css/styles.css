@@ -1,0 +1,34 @@
+.hero {
+    background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.portfolio-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Back-to-Top 按鈕 */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    display: none;
+    border-radius: 50%;
+    padding: 0.6rem 0.7rem;
+}
+
+/* 文字框固定＋自動增高 */
+textarea.no-resize {
+    resize: none;
+    overflow: hidden;
+}
+
+/* 關於我區域的校徽 */
+.about-logo {
+    max-width: 180px;
+    height: auto;
+}
