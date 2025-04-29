@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的個人網站</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">About Me</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">作品集</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO 區 -->
+    <header class="hero" id="home">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Hello, welcome to my world!</h1>
+            <p class="lead">網頁設計學期末課程驗收，展現我在課程中的學習成果。</p>
+            <a href="#projects" class="btn btn-outline-light btn-lg mt-3">看看我的作品</a>
+        </div>
+    </header>
+
+    <!-- 關於我 -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">關於我</h2>
+            <div class="row align-items-start justify-content-center">
+                <!-- 文字 -->
+                <div class="col-md-8">
+                    <p>我是一名高三生，正準備四技二專統測以及技優甄審入學。<br>從小就對資訊類感興趣尤其是「寫網頁、Python」！！<br>在程式中學習成長，也獲得許多失敗經驗轉為成功以及優越感！</p>
+                    <p>目標堅定唯一：<a href="https://imd.ntub.edu.tw/" target="_blank" style="color: black;"><u>國立台北商業大學 National Taipei University of Business.</u></a></p>
+                </div>
+                <!-- 校徽 -->
+                <div class="col-md-4 text-center text-md-start mt-4 mt-md-0">
+                    <img src="img/NTUB.png" alt="NTUB 校徽" class="about-logo img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center">作品集</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://source.unsplash.com/random/600x400?code" class="card-img-top portfolio-img"
+                            alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">專案名稱 1</h5>
+                            <p class="card-text">簡短描述這個專案的內容與學到的技能。</p>
+                            <a href="#" class="btn btn-primary" target="_blank">查看</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://source.unsplash.com/random/600x400?design" class="card-img-top portfolio-img"
+                            alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">專案名稱 2</h5>
+                            <p class="card-text">簡短描述這個專案的內容與學到的技能。</p>
+                            <a href="#" class="btn btn-primary" target="_blank">查看</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://source.unsplash.com/random/600x400?technology"
+                            class="card-img-top portfolio-img" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">專案名稱 3</h5>
+                            <p class="card-text">簡短描述這個專案的內容與學到的技能。</p>
+                            <a href="#" class="btn btn-primary" target="_blank">查看</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡表單 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">聯絡我</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">姓名</label>
+                            <input type="text" class="form-control" id="name" placeholder="你的名字">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">電子郵件</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">訊息</label>
+                            <textarea class="form-control no-resize" id="message" rows="4"
+                                placeholder="寫下想對我說的話"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">送出</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 黃暐翔. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top 按鈕 -->
+    <a href="#top" class="btn btn-primary back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
